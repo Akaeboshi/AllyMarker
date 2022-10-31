@@ -1,0 +1,234 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: #b2cdfa;
+    margin:0%;
+}
+
+.container{
+    width: 70%;
+    height: 70vh;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+    background: rgb(251, 253, 255);
+    display: grid;
+    grid-template-rows: 45% 55%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a b" "c b";
+    border-radius: 8px;
+    grid-gap: 1%;
+    padding: 1rem;
+    justify-items: center;
+    margin: auto;
+}
+  
+.input-group {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    margin: 1%;
+}
+
+.input-box{
+    display: flex;
+    min-width: 45%;
+    max-width: 250px;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box select{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    width: 100%; 
+    min-width: 190px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box select-selected{
+    background-color: #fff;
+}
+
+.input-box select:hover{
+    background-color: #eeeeee75;
+    outline: 1px solid #b2cdfa;
+}
+
+.input-box input:hover{
+    background-color: #eeeeee75;
+    outline: 1px solid #b2cdfa;
+}
+
+.input-box input:focus-visible{
+    outline: 2px solid #95afdb;
+}
+
+.input-box select:focus-visible{
+    outline: 2px solid #95afdb;
+}
+
+.button button{
+    margin-top: -1rem;
+    border: none;
+    background-color: #95afdb;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #1a2a3450;
+}
+
+.button button:hover{
+    background-color: #6d80a1;
+}
+
+.button button a{
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+p {
+    margin:0.5%;
+    font-size: 100%;
+    text-align: justify;
+    margin-right: 5%;
+    min-width: auto;
+}
+
+#pais{
+    margin-right: 10px;
+}
+
+#cidade{
+    margin-right: 10px;
+}
+
+img{
+    justify-content: center;
+    align-items:center;
+    max-width:50%;
+    min-width:15%;
+    margin-bottom: 15%;
+    height:auto;
+}
+
+.form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+h3 {
+    border-bottom: 3px solid black;
+}
+  
+.dados {
+    grid-area: a;
+    display:flex;
+    height: auto;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:3%;
+}
+
+.destinos {
+    grid-area: c;
+    height: auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:3%;
+}
+
+.descricao {
+    grid-area: b;
+    height: auto;
+    display: grid;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin:3%;
+}
+
+@media only screen and (max-height: 900px) {
+    .container{
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .container{
+        height: 98vh;
+    }
+}
+
+@media only screen and (max-height: 590px) {
+    .container{
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .container{
+        height: 60rem;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+        background: rgb(251, 253, 255);
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .descricao {
+        max-height: 30%
+    }
+    img{
+        max-width: 20%;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    img{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container{
+        min-width: 90%;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+        background: rgb(251, 253, 255);
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        justify-content: center;
+    }
+}
